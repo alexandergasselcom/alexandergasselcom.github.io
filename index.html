@@ -341,25 +341,9 @@
 					</section>
 
 				<!-- Copyright -->
-				
-				    {% assign year_from = site.posts[-1].date | date: '%Y' %}
-				    {% assign year_to   = site.time | date: '%Y' %}
-				    {% if year_from == nil or year_from == year_to %}
-				      {% assign year_string = year_from %}
-				    {% else %}
-				      {% assign from_to_seperator = site.data.strings.from_to_seperator | default: '-' %}
-				      {% assign year_string = year_from | append: '&nbsp;' | append: from_to_seperator | append: '&nbsp;' | append: year_to %}
-				    {% endif %}
-				
-				    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}</small></p>
-				
-				    <p><small class="copyright">© <!--copyyears-->; All rights reserved.
-</small></p>
-
-				
 					<section class="wrapper copyright">
 						<div class="inner">
-							<p>{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}Copyright &copy; <!--copyyears--> AlexanderGassel.com. All Rights Reserved.</p>
+							Copyright &copy; 2021 AlexanderGassel.com. All Rights Reserved.</p>
 						</div>
 					</section>
 			</div>
