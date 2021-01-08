@@ -350,10 +350,10 @@
 				      {% assign from_to_seperator = site.data.strings.from_to_seperator | default: '-' %}
 				      {% assign year_string = year_from | append: '&nbsp;' | append: from_to_seperator | append: '&nbsp;' | append: year_to %}
 				    {% endif %}
+				
 					<section class="wrapper copyright">
 						<div class="inner">
-							{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<div>','' | replace:'</div>','' }}
-							Copyright &copy; <!--copyyears--> AlexanderGassel.com. All Rights Reserved.
+							<p>{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}Copyright &copy; <!--copyyears--> AlexanderGassel.com. All Rights Reserved.</p>
 						</div>
 					</section>
 			</div>
