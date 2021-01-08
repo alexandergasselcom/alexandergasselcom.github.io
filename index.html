@@ -351,6 +351,12 @@
 				      {% assign year_string = year_from | append: '&nbsp;' | append: from_to_seperator | append: '&nbsp;' | append: year_to %}
 				    {% endif %}
 				
+				    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}</small></p>
+				
+				    <p><small class="copyright">© <!--copyyears-->; All rights reserved.
+</small></p>
+
+				
 					<section class="wrapper copyright">
 						<div class="inner">
 							<p>{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}Copyright &copy; <!--copyyears--> AlexanderGassel.com. All Rights Reserved.</p>
